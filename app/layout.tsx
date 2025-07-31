@@ -1,24 +1,24 @@
-import type { Metadata } from "next";
-import { Inter, IBM_Plex_Serif } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Inter, IBM_Plex_Serif } from 'next/font/google';
+import './globals.css';
 
 const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+  variable: '--font-inter',
+  subsets: ['latin'],
 });
 
 const ibmPlexSerif = IBM_Plex_Serif({
-  variable: "--font-ibm-plex-serif",
-  subsets: ["latin"],
-  weight:['400','700']
+  variable: '--font-ibm-plex-serif',
+  subsets: ['latin'],
+  weight: ['400', '700'],
 });
 
 export const metadata: Metadata = {
-  title: "TZA",
-  description: "TZA is a modern banking plaform for everyone.",
-  icons:{
-    icon: '/icons/logo.svg'
-  }
+  title: 'TZA',
+  description: 'TZA is a modern banking plaform for everyone.',
+  icons: {
+    icon: '/icons/logo.svg',
+  },
 };
 
 export default function RootLayout({
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" >
+    <html lang="en">
       <body
         className={`${inter.variable} ${ibmPlexSerif.variable} antialiased`}
       >
